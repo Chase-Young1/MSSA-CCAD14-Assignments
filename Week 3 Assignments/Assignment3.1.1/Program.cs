@@ -11,7 +11,7 @@ namespace Assignment3._1._1
         static string ReturnEvenNumbers()
         {
             StringBuilder evenNumbers = new StringBuilder();
-            for (int x = 2; x < 100; x+=2)
+            for (int x = 2; x < 100; x += 2)
             {
                 evenNumbers.Append(x).Append(" ");
             }

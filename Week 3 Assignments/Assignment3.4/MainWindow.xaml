@@ -1,0 +1,33 @@
+﻿<Window x:Class="Assignment3._4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment3._4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid HorizontalAlignment="Center" Height="236" VerticalAlignment="Center" Width="342">
+            <ListView Name="CoffeeListView" HorizontalAlignment="Right" Height="236" VerticalAlignment="Center" Width="342">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Cappuccinos" Width="100" DisplayMemberBinding="{Binding Cappuccino}"/>
+                        <GridViewColumn Header="Lattes" Width="75" DisplayMemberBinding="{Binding Latte}"/>
+                        <GridViewColumn Header="Mocha" Width="75" DisplayMemberBinding="{Binding Mocha}"/>
+                        <GridViewColumn Header="Cold Brew" Width="100" DisplayMemberBinding="{Binding ColdBrew}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+        <StackPanel HorizontalAlignment="Left" Height="236" Margin="128,0,0,0" VerticalAlignment="Center" Width="96">
+            <TextBox x:Name="Cappuccino" Height="22" TextWrapping="Wrap" Width="95" HorizontalAlignment="Right"/>
+            <TextBox x:Name="Latte" Height="22" TextWrapping="Wrap" Width="95" HorizontalAlignment="Right"/>
+            <TextBox x:Name="Mocha" Height="22" TextWrapping="Wrap" Width="95" HorizontalAlignment="Right"/>
+            <TextBox x:Name="ColdBrew" Height="22" TextWrapping="Wrap" Width="95" HorizontalAlignment="Right"/>
+            <Button Content="Add Coffee" Height="20" Width="84" Click="AddCoffee_Click"/>
+        </StackPanel>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="58,99,0,0" TextWrapping="Wrap" Text="Cappuccino:" VerticalAlignment="Top" Width="72"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="58,121,0,0" TextWrapping="Wrap" Text="Latte:" VerticalAlignment="Top" Width="70"/>
+
+    </Grid>
+</Window>

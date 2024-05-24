@@ -41,7 +41,6 @@ namespace Assignment3._4
             this.Latte.Clear();
             this.Mocha.Clear();
             this.ColdBrew.Clear();
-
         }
     }
 }

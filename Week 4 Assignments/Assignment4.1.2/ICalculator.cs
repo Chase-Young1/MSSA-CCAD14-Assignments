@@ -12,6 +12,5 @@ namespace Assignment4._1._2
         public void Subtract();
         public void Multiply();
         public void Divide();
-
     }
 }

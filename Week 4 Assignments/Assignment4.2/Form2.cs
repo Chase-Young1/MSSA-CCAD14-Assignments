@@ -41,7 +41,6 @@ namespace Assignment4._2
                 StudentList_ListView.Items.Add(row);
             }
         }
-
         private void Save_Button_Click(object sender, EventArgs e)
         {
             try

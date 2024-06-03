@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a number:");
+            Console.WriteLine("Please enter any integer:");
             int n = int.Parse(Console.ReadLine());
             int sum = SumOfDigits(n);
             Console.WriteLine($"The sum of the digits in {n} is: {sum}.");

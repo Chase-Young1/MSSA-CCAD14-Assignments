@@ -32,6 +32,10 @@ namespace Assignment5._3._1
             int n3 = 3;
             Console.WriteLine(PlantFlowers(flowerbed3, n3));
 
+            int[] flowerbed4 = { 0, 0, 0 };
+            int n4 = 2;
+            Console.WriteLine(PlantFlowers(flowerbed4, n4));
+
         }
         static bool PlantFlowers(int[] flowerbed, int n)
         {
